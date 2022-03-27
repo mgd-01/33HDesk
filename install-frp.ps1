@@ -21,7 +21,7 @@ if (!(Test-Path frps.exe)) {
 
 
 Write-Output 'Setting permissions for Scoop Installer...'
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Write-Output 'Installing Scoop...'
 iwr -useb get.scoop.sh -outfile 'install.ps1'
