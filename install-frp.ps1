@@ -19,4 +19,11 @@ if (!(Test-Path frps.exe)) {
     tar xf frp.zip --strip-components=1
 }
 
+
+Write-Output 'Setting permissions for Scoop Installer...'
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+
+Write-Output 'Installing Scoop...'
+iwr -useb get.scoop.sh | iex
+
 Pop-Location
