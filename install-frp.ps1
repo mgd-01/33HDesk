@@ -27,4 +27,18 @@ Write-Output 'Installing Scoop...'
 iwr -useb get.scoop.sh -outfile 'install.ps1'
 .\install.ps1 -RunAsAdmin 
 
+scoop install aria2
+scoop install irfanview
+scoop install openoffice
+scoop install brave
+scoop install winscp
+scoop install putty
+scoop install teamviewer
+scoop install anydesk
+scoop install sumatrapdf
+scoop install handreak
+scoop install obs-studio
+scoop install krita
+scoop install audacity
+
 Pop-Location
