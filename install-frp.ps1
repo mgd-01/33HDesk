@@ -26,7 +26,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Write-Output 'Installing Scoop...'
 iwr -useb get.scoop.sh -outfile 'install.ps1'
 .\install.ps1 -RunAsAdmin 
-
+scoop bucket add extras
+scoop update
 scoop install aria2
 scoop install irfanview
 scoop install openoffice
