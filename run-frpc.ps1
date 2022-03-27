@@ -30,4 +30,4 @@ if (Test-Path env:RUNNER_PASSWORD) {
 }
 
 Write-Output 'Running frpc...'
-./frp/frpc -c frpc-windows.ini 2>&1 | Select-Object {$_ -replace '[0-9\.]+:6969','***:6969'}; cmd /c exit 0
+./frp/frpc -c frpc.ini 2>&1 | Select-Object {$_ -replace '[0-9\.]+:6969','***:6969'}; cmd /c exit 0
