@@ -24,6 +24,7 @@ Write-Output 'Setting permissions for Scoop Installer...'
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
 Write-Output 'Installing Scoop...'
-iwr -useb get.scoop.sh | iex
+iwr -useb get.scoop.sh -outfile 'install.ps1'
+.\install.ps1 -RunAsAdmin 
 
 Pop-Location
