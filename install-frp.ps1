@@ -37,7 +37,6 @@ scoop install putty
 scoop install teamviewer
 scoop install anydesk
 scoop install sumatrapdf
-scoop install handreak
 scoop install obs-studio
 scoop install krita
 scoop install audacity
